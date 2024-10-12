@@ -1,0 +1,7 @@
+16:30:33 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+
+16:30:34 Build Finished. 0 errors, 0 warnings. (took 320ms)
+

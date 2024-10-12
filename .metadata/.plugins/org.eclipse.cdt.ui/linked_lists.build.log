@@ -1,0 +1,7 @@
+10:57:37 **** Incremental Build of configuration Debug for project linked_lists ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linked_lists.o" "..\\src\\linked_lists.c" 
+gcc -o linked_lists.exe "src\\linked_lists.o" 
+
+10:57:37 Build Finished. 0 errors, 0 warnings. (took 483ms)
+

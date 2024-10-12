@@ -1,0 +1,7 @@
+16:14:05 **** Incremental Build of configuration Debug for project w01_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w01_task.o" "..\\src\\w01_task.c" 
+gcc -o w01_task.exe "src\\w01_task.o" 
+
+16:14:05 Build Finished. 0 errors, 0 warnings. (took 317ms)
+

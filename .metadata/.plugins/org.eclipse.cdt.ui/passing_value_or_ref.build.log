@@ -1,0 +1,7 @@
+14:54:44 **** Incremental Build of configuration Debug for project passing_value_or_ref ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\passing_value_or_ref.o" "..\\src\\passing_value_or_ref.c" 
+gcc -o passing_value_or_ref.exe "src\\passing_value_or_ref.o" 
+
+14:54:45 Build Finished. 0 errors, 0 warnings. (took 361ms)
+

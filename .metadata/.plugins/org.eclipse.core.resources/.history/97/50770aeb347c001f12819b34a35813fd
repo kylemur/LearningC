@@ -1,0 +1,64 @@
+/*
+ ============================================================================
+ Name        : w02_task.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int i = 0;
+
+	while (i != 6) // task part 1
+	{
+		printf("Options:\n");
+		printf("1. Buy Bananas\n");
+		printf("2. Buy Apples\n");
+		printf("3. Buy Oranges\n");
+		printf("4. Buy Grapes\n");
+		printf("5. Buy Peaches\n");
+		printf("6. Exit\n");
+		printf("What do you want? ");
+		scanf("%d", &i);
+
+		switch (i)
+		{
+		case 1:
+			printf("$0.50 per pound\n");
+			break;
+		case 2:
+			printf("$1.66 per pound\n");
+			break;
+		case 3:
+			printf("$1.49 per pound\n");
+			break;
+		case 4:
+			printf("$1.78 per pound\n");
+			break;
+		case 5:
+			printf("$2.42 per pound\n");
+			break;
+		default:
+			printf("Invalid input. Try again.\n");
+		}
+	}
+
+	int j = 0;
+	for (j = 1; j <= 10; j++) // task part 2
+	{
+		printf("%d\n", j);
+	}
+
+	for (j = 10; j >= 1; j--) // task part 3
+	{
+		printf("%d\n", j);
+	}
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,1184 @@
+21:42:34 **** Rebuild of configuration Debug for project hello ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hello.o" "..\\src\\hello.c" 
+gcc -o hello.exe "src\\hello.o" 
+Info: Nothing to build for hello
+Info: Nothing to build for hello
+21:53:11 **** Rebuild of configuration Debug for project second_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\second_project.o" "..\\src\\second_project.c" 
+gcc -o second_project.exe "src\\second_project.o" 
+Info: Nothing to build for second_project
+21:55:01 **** Incremental Build of configuration Debug for project second_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\second_project.o" "..\\src\\second_project.c" 
+gcc -o second_project.exe "src\\second_project.o" 
+Info: Nothing to build for second_project
+Info: Nothing to build for second_project
+Info: Nothing to build for second_project
+Info: Nothing to build for second_project
+Info: Nothing to build for second_project
+Info: Nothing to build for second_project
+14:14:15 **** Rebuild of configuration Debug for project variables ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables.o" "..\\src\\variables.c" 
+..\src\variables.c: In function 'main':
+..\src\variables.c:18:14: warning: unused variable 'c' [-Wunused-variable]
+   18 |         char c = 'a';
+      |              ^
+..\src\variables.c:17:14: warning: unused variable 'l' [-Wunused-variable]
+   17 |         long l = 60;
+      |              ^
+..\src\variables.c:16:15: warning: unused variable 's' [-Wunused-variable]
+   16 |         short s = 15;
+      |               ^
+..\src\variables.c:15:13: warning: unused variable 'i' [-Wunused-variable]
+   15 |         int i = 0;
+      |             ^
+gcc -o variables.exe "src\\variables.o" 
+Info: Nothing to build for variables
+Info: Nothing to build for variables
+14:29:30 **** Rebuild of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+Info: Nothing to build for variables2
+14:33:12 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+Info: Nothing to build for variables2
+14:36:47 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:48: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %d\n", i, sizeof(i));
+      |                                               ~^        ~~~~~~~~~
+      |                                                |        |
+      |                                                int      long long unsigned int
+      |                                               %lld
+gcc -o variables2.exe "src\\variables2.o" 
+14:37:46 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %ld\n", i, sizeof(i));
+      |                                               ~~^        ~~~~~~~~~
+      |                                                 |        |
+      |                                                 long int long long unsigned int
+      |                                               %lld
+gcc -o variables2.exe "src\\variables2.o" 
+14:39:50 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %ld\n", i, sizeof(i));
+      |                                               ~~^        ~~~~~~~~~
+      |                                                 |        |
+      |                                                 long int long long unsigned int
+      |                                               %lld
+gcc -o variables2.exe "src\\variables2.o" 
+14:44:04 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %ld\n", i, sizeof(i));
+      |                                               ~~^        ~~~~~~~~~
+      |                                                 |        |
+      |                                                 long int long long unsigned int
+      |                                               %lld
+..\src\variables2.c:20:77: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'long long unsigned int' [-Wformat=]
+   20 |         printf("The character is %c, the numeric value is %d, the size is %ld\n", c, c, sizeof(c));
+      |                                                                           ~~^           ~~~~~~~~~
+      |                                                                             |           |
+      |                                                                             long int    long long unsigned int
+      |                                                                           %lld
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:45:53 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %ld\n", i, sizeof(i));
+      |                                               ~~^        ~~~~~~~~~
+      |                                                 |        |
+      |                                                 long int long long unsigned int
+      |                                               %lld
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:47:14 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:17:49: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long unsigned int' [-Wformat=]
+   17 |         printf("The number is %d. The size is %ld\n", i, sizeof(i));
+      |                                               ~~^        ~~~~~~~~~
+      |                                                 |        |
+      |                                                 long int long long unsigned int
+      |                                               %lld
+..\src\variables2.c:20:77: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'long long unsigned int' [-Wformat=]
+   20 |         printf("The character is %c, the numeric value is %d, the size is %ld\n", c, c, sizeof(c));
+      |                                                                           ~~^           ~~~~~~~~~
+      |                                                                             |           |
+      |                                                                             long int    long long unsigned int
+      |                                                                           %lld
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:47:34 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:48:01 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:49:09 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -o variables2.exe "src\\variables2.o" 
+Info: Nothing to build for variables2
+15:46:41 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file variables2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:48:19 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -o variables2.exe "src\\variables2.o" 
+16:16:30 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:25:36: warning: format '%lu' expects argument of type 'long unsigned int', but argument 5 has type 'long long unsigned int' [-Wformat=]
+   25 |         printf("%f %e %g size is %lu\n", f, f, f, sizeof(f));
+      |                                  ~~^              ~~~~~~~~~
+      |                                    |              |
+      |                                    |              long long unsigned int
+      |                                    long unsigned int
+      |                                  %llu
+gcc -o variables2.exe "src\\variables2.o" 
+16:26:32 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+..\src\variables2.c: In function 'main':
+..\src\variables2.c:25:36: warning: format '%lu' expects argument of type 'long unsigned int', but argument 5 has type 'long long unsigned int' [-Wformat=]
+   25 |         printf("%f %e %g size is %lu\n", f, f, f, sizeof(f));
+      |                                  ~~^              ~~~~~~~~~
+      |                                    |              |
+      |                                    |              long long unsigned int
+      |                                    long unsigned int
+      |                                  %llu
+..\src\variables2.c:28:36: warning: format '%lu' expects argument of type 'long unsigned int', but argument 5 has type 'long long unsigned int' [-Wformat=]
+   28 |         printf("%f %e %g size is %lu\n", d, d, d, sizeof(d));
+      |                                  ~~^              ~~~~~~~~~
+      |                                    |              |
+      |                                    |              long long unsigned int
+      |                                    long unsigned int
+      |                                  %llu
+gcc -o variables2.exe "src\\variables2.o" 
+16:30:33 **** Incremental Build of configuration Debug for project variables2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\variables2.o" "..\\src\\variables2.c" 
+gcc -o variables2.exe "src\\variables2.o" 
+17:47:03 **** Rebuild of configuration Debug for project arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrays.o" "..\\src\\arrays.c" 
+gcc -o arrays.exe "src\\arrays.o" 
+Info: Nothing to build for arrays
+17:52:18 **** Incremental Build of configuration Debug for project arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrays.o" "..\\src\\arrays.c" 
+gcc -o arrays.exe "src\\arrays.o" 
+17:56:26 **** Incremental Build of configuration Debug for project arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrays.o" "..\\src\\arrays.c" 
+gcc -o arrays.exe "src\\arrays.o" 
+Info: Nothing to build for arrays
+17:57:17 **** Incremental Build of configuration Debug for project arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrays.o" "..\\src\\arrays.c" 
+..\src\arrays.c: In function 'main':
+..\src\arrays.c:25:24: warning: initializer-string for array of 'char' is too long
+   25 |         char name[4] = "Harry";
+      |                        ^~~~~~~
+gcc -o arrays.exe "src\\arrays.o" 
+17:57:31 **** Incremental Build of configuration Debug for project arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrays.o" "..\\src\\arrays.c" 
+gcc -o arrays.exe "src\\arrays.o" 
+11:21:35 **** Rebuild of configuration Debug for project user_input ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\user_input.o" "..\\src\\user_input.c" 
+gcc -o user_input.exe "src\\user_input.o" 
+Info: Nothing to build for user_input
+Info: Nothing to build for user_input
+11:35:03 **** Incremental Build of configuration Debug for project user_input ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\user_input.o" "..\\src\\user_input.c" 
+gcc -o user_input.exe "src\\user_input.o" 
+11:43:33 **** Incremental Build of configuration Debug for project user_input ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\user_input.o" "..\\src\\user_input.c" 
+gcc -o user_input.exe "src\\user_input.o" 
+Info: Nothing to build for user_input
+14:26:27 **** Rebuild of configuration Debug for project if_else ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\if_else.o" "..\\src\\if_else.c" 
+..\src\if_else.c: In function 'main':
+..\src\if_else.c:27:17: error: implicit declaration of function 'print'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   27 |                 print("%d is not less than %d\n", i, j);
+      |                 ^~~~~
+      |                 printf
+14:26:41 **** Incremental Build of configuration Debug for project if_else ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\if_else.o" "..\\src\\if_else.c" 
+gcc -o if_else.exe "src\\if_else.o" 
+Info: Nothing to build for if_else
+14:41:48 **** Rebuild of configuration Debug for project logic_operators ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\logic_operators.o" "..\\src\\logic_operators.c" 
+gcc -o logic_operators.exe "src\\logic_operators.o" 
+Info: Nothing to build for logic_operators
+Info: Nothing to build for logic_operators
+14:55:03 **** Rebuild of configuration Debug for project learning_debugging ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\learning_debugging.o" "..\\src\\learning_debugging.c" 
+gcc -o learning_debugging.exe "src\\learning_debugging.o" 
+Info: Nothing to build for learning_debugging
+Info: Nothing to build for learning_debugging
+15:37:05 **** Incremental Build of configuration Debug for project learning_debugging ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\learning_debugging.o" "..\\src\\learning_debugging.c" 
+..\src\learning_debugging.c: In function 'main':
+..\src\learning_debugging.c:47:31: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long long unsigned int' [-Wformat=]
+   47 |   printf("The total is %d %d %d\n", theTotal, size, sizeof(numbers));
+      |                              ~^                     ~~~~~~~~~~~~~~~
+      |                               |                     |
+      |                               int                   long long unsigned int
+      |                              %lld
+gcc -o learning_debugging.exe "src\\learning_debugging.o" 
+Info: Nothing to build for learning_debugging
+Info: Nothing to build for learning_debugging
+Info: Nothing to build for learning_debugging
+15:39:54 **** Incremental Build of configuration Debug for project learning_debugging ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\learning_debugging.o" "..\\src\\learning_debugging.c" 
+..\src\learning_debugging.c: In function 'main':
+..\src\learning_debugging.c:47:29: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+   47 |   printf("The total is %d %ld %lu\n", theTotal, size, sizeof(numbers));
+      |                           ~~^                   ~~~~
+      |                             |                   |
+      |                             long int            int
+      |                           %d
+..\src\learning_debugging.c:47:33: warning: format '%lu' expects argument of type 'long unsigned int', but argument 4 has type 'long long unsigned int' [-Wformat=]
+   47 |   printf("The total is %d %ld %lu\n", theTotal, size, sizeof(numbers));
+      |                               ~~^                     ~~~~~~~~~~~~~~~
+      |                                 |                     |
+      |                                 long unsigned int     long long unsigned int
+      |                               %llu
+gcc -o learning_debugging.exe "src\\learning_debugging.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file learning_debugging.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:40:24 **** Incremental Build of configuration Debug for project learning_debugging ****
+Info: Internal Builder is used for build
+gcc -o learning_debugging.exe "src\\learning_debugging.o" 
+Info: Nothing to build for learning_debugging
+16:10:56 **** Rebuild of configuration Debug for project w01_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w01_task.o" "..\\src\\w01_task.c" 
+gcc -o w01_task.exe "src\\w01_task.o" 
+Info: Nothing to build for w01_task
+Info: Nothing to build for w01_task
+16:14:05 **** Incremental Build of configuration Debug for project w01_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w01_task.o" "..\\src\\w01_task.c" 
+gcc -o w01_task.exe "src\\w01_task.o" 
+11:16:07 **** Rebuild of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+11:16:47 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:20:9: warning: statement will never be executed [-Wswitch-unreachable]
+   20 |         printf("Options:\n");
+      |         ^~~~~~~~~~~~~~~~~~~~
+gcc -o w02_task.exe "src\\w02_task.o" 
+11:20:14 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+11:25:02 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+Info: Nothing to build for w02_task
+12:27:00 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:69:25: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   69 |                 scanf("%d", c);
+      |                        ~^   ~
+      |                         |   |
+      |                         |   int
+      |                         int *
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+12:29:36 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+12:40:20 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:86:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   86 |         printf("Maximum: %d\n", &max);
+      |                          ~^     ~~~~
+      |                           |     |
+      |                           int   int *
+      |                          %n
+..\src\w02_task.c:87:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   87 |         printf("Minimum: %d\n", &min);
+      |                          ~^     ~~~~
+      |                           |     |
+      |                           int   int *
+      |                          %n
+..\src\w02_task.c:88:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+   88 |         printf("Average: %f\n", &ave);
+      |                          ~^     ~~~~
+      |                           |     |
+      |                           |     float *
+      |                           double
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+12:46:11 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:86:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   86 |         printf("Maximum: %d\n", &maxi);
+      |                          ~^     ~~~~~
+      |                           |     |
+      |                           int   int *
+      |                          %n
+..\src\w02_task.c:87:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   87 |         printf("Minimum: %d\n", &mini);
+      |                          ~^     ~~~~~
+      |                           |     |
+      |                           int   int *
+      |                          %n
+..\src\w02_task.c:88:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+   88 |         printf("Average: %f\n", &aver);
+      |                          ~^     ~~~~~
+      |                           |     |
+      |                           |     float *
+      |                           double
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+12:52:48 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file w02_task.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:53:34 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file w02_task.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:53:57 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+12:56:26 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:63:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   63 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:06:40 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:79:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   79 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+Info: Nothing to build for w02_task
+13:09:34 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:81:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   81 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:11:33 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:70:9: error: too few arguments to function 'printf'
+   70 |         printf();
+      |         ^~~~~~
+In file included from ..\src\w02_task.c:11:
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:513:15: note: declared here
+  513 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |               ^~~~~~
+..\src\w02_task.c:77:9: error: too few arguments to function 'printf'
+   77 |         printf();
+      |         ^~~~~~
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:513:15: note: declared here
+  513 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |               ^~~~~~
+..\src\w02_task.c:83:9: error: too few arguments to function 'printf'
+   83 |         printf();
+      |         ^~~~~~
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:513:15: note: declared here
+  513 |   int __cdecl printf(const char * __restrict__ _Format,...);
+      |               ^~~~~~
+..\src\w02_task.c:84:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   84 |         int a[10];
+      |             ^
+13:11:52 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:70:16: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   70 |         printf("");
+      |                ^~
+..\src\w02_task.c:77:16: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   77 |         printf("");
+      |                ^~
+..\src\w02_task.c:83:16: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   83 |         printf("");
+      |                ^~
+..\src\w02_task.c:84:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   84 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:12:35 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:84:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   84 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+13:14:33 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:84:13: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+   84 |         int a[10];
+      |             ^
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:28:27 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:28:56 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+13:30:42 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:34:04 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+..\src\w02_task.c: In function 'main':
+..\src\w02_task.c:120:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  120 |         scanf("%d", &c);
+      |                ~^   ~~
+      |                 |   |
+      |                 |   float *
+      |                 int *
+      |                %e
+..\src\w02_task.c:123:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+  123 |         printf("The smaller of %d and %d is %d.", b, c, minim);
+      |                                       ~^             ~
+      |                                        |             |
+      |                                        int           double
+      |                                       %f
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:36:01 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+13:36:42 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+Info: Nothing to build for w02_task
+13:36:57 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+15:40:27 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+Info: Nothing to build for w02_task
+15:55:41 **** Incremental Build of configuration Debug for project w02_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w02_task.o" "..\\src\\w02_task.c" 
+gcc -o w02_task.exe "src\\w02_task.o" 
+14:21:11 **** Rebuild of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structures.o" "..\\src\\structures.c" 
+gcc -o structures.exe "src\\structures.o" 
+Info: Nothing to build for structures
+14:33:07 **** Incremental Build of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structures.o" "..\\src\\structures.c" 
+..\src\structures.c: In function 'main':
+..\src\structures.c:32:36: error: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   32 |         struct bank b = { 1, 1.27, "Harry" };
+      |                                    ^~~~~~~
+..\src\structures.c:32:36: note: (near initialization for 'b.name[2]')
+..\src\structures.c:32:25: warning: missing braces around initializer [-Wmissing-braces]
+   32 |         struct bank b = { 1, 1.27, "Harry" };
+      |                         ^
+      |                           {                }
+14:34:36 **** Incremental Build of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structures.o" "..\\src\\structures.c" 
+gcc -o structures.exe "src\\structures.o" 
+C:/mingw/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file structures.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:35:10 **** Incremental Build of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -o structures.exe "src\\structures.o" 
+Info: Nothing to build for structures
+14:36:24 **** Incremental Build of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structures.o" "..\\src\\structures.c" 
+gcc -o structures.exe "src\\structures.o" 
+Info: Nothing to build for structures
+14:45:54 **** Incremental Build of configuration Debug for project structures ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\structures.o" "..\\src\\structures.c" 
+gcc -o structures.exe "src\\structures.o" 
+Info: Nothing to build for structures
+14:59:07 **** Rebuild of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+Info: Nothing to build for arithmetic
+Info: Nothing to build for arithmetic
+15:04:52 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:05:59 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:07:20 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:08:02 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:08:47 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:09:37 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:10:26 **** Incremental Build of configuration Debug for project arithmetic ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arithmetic.o" "..\\src\\arithmetic.c" 
+gcc -o arithmetic.exe "src\\arithmetic.o" 
+15:19:29 **** Rebuild of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+..\src\pointers.c: In function 'main':
+..\src\pointers.c:18:14: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+   18 |         int* p = NULL;
+      |              ^
+gcc -o pointers.exe "src\\pointers.o" 
+Info: Nothing to build for pointers
+15:22:42 **** Incremental Build of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+gcc -o pointers.exe "src\\pointers.o" 
+Info: Nothing to build for pointers
+Info: Nothing to build for pointers
+15:31:48 **** Incremental Build of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+gcc -o pointers.exe "src\\pointers.o" 
+15:45:34 **** Incremental Build of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+gcc -o pointers.exe "src\\pointers.o" 
+Info: Nothing to build for pointers
+15:46:55 **** Incremental Build of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+..\src\pointers.c: In function 'main':
+..\src\pointers.c:27:18: error: passing argument 1 of 'add_five' makes pointer from integer without a cast [-Wint-conversion]
+   27 |         add_five(a);
+      |                  ^
+      |                  |
+      |                  int
+..\src\pointers.c:14:20: note: expected 'int *' but argument is of type 'int'
+   14 | void add_five(int* a)
+      |               ~~~~~^
+15:49:43 **** Incremental Build of configuration Debug for project pointers ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointers.o" "..\\src\\pointers.c" 
+gcc -o pointers.exe "src\\pointers.o" 
+16:04:24 **** Rebuild of configuration Debug for project point_struct ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\point_struct.o" "..\\src\\point_struct.c" 
+..\src\point_struct.c: In function 'main':
+..\src\point_struct.c:24:25: warning: variable 'george' set but not used [-Wunused-but-set-variable]
+   24 |         struct person * george = NULL;
+      |                         ^~~~~~
+gcc -o point_struct.exe "src\\point_struct.o" 
+Info: Nothing to build for point_struct
+Info: Nothing to build for point_struct
+14:18:59 **** Incremental Build of configuration Debug for project point_struct ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\point_struct.o" "..\\src\\point_struct.c" 
+gcc -o point_struct.exe "src\\point_struct.o" 
+Info: Nothing to build for point_struct
+14:45:48 **** Rebuild of configuration Debug for project passing_value_or_ref ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\passing_value_or_ref.o" "..\\src\\passing_value_or_ref.c" 
+gcc -o passing_value_or_ref.exe "src\\passing_value_or_ref.o" 
+Info: Nothing to build for passing_value_or_ref
+14:53:04 **** Incremental Build of configuration Debug for project passing_value_or_ref ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\passing_value_or_ref.o" "..\\src\\passing_value_or_ref.c" 
+..\src\passing_value_or_ref.c: In function 'main':
+..\src\passing_value_or_ref.c:42:14: error: passing argument 1 of 'fxnG' makes pointer from integer without a cast [-Wint-conversion]
+   42 |         fxnG(a);
+      |              ^
+      |              |
+      |              int
+..\src\passing_value_or_ref.c:22:15: note: expected 'int *' but argument is of type 'int'
+   22 | int fxnG(int *valV)
+      |          ~~~~~^~~~
+14:54:44 **** Incremental Build of configuration Debug for project passing_value_or_ref ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\passing_value_or_ref.o" "..\\src\\passing_value_or_ref.c" 
+gcc -o passing_value_or_ref.exe "src\\passing_value_or_ref.o" 
+15:12:45 **** Rebuild of configuration Debug for project pointer_struct_fxn ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_struct_fxn.o" "..\\src\\pointer_struct_fxn.c" 
+..\src\pointer_struct_fxn.c: In function 'fxnG':
+..\src\pointer_struct_fxn.c:21:52: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   21 |         printf("The value before the change is %d %d\n", valV->value_1);
+      |                                                   ~^
+      |                                                    |
+      |                                                    int
+..\src\pointer_struct_fxn.c:24:51: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   24 |         printf("The value after the change is %d %d\n", valV->value_2);
+      |                                                  ~^
+      |                                                   |
+      |                                                   int
+gcc -o pointer_struct_fxn.exe "src\\pointer_struct_fxn.o" 
+15:13:53 **** Incremental Build of configuration Debug for project pointer_struct_fxn ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_struct_fxn.o" "..\\src\\pointer_struct_fxn.c" 
+gcc -o pointer_struct_fxn.exe "src\\pointer_struct_fxn.o" 
+Info: Nothing to build for pointer_struct_fxn
+15:32:02 **** Rebuild of configuration Debug for project w03_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task.o" "..\\src\\w03_task.c" 
+gcc -o w03_task.exe "src\\w03_task.o" 
+Info: Nothing to build for w03_task
+Info: Nothing to build for w03_task
+15:40:12 **** Incremental Build of configuration Debug for project w03_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task.o" "..\\src\\w03_task.c" 
+..\src\w03_task.c: In function 'addT':
+..\src\w03_task.c:23:44: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   23 |         printf("The variable value is now %d\n", num);
+      |                                           ~^     ~~~
+      |                                            |     |
+      |                                            int   int *
+      |                                           %n
+gcc -o w03_task.exe "src\\w03_task.o" 
+15:40:55 **** Incremental Build of configuration Debug for project w03_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task.o" "..\\src\\w03_task.c" 
+gcc -o w03_task.exe "src\\w03_task.o" 
+Info: Nothing to build for w03_task
+16:04:30 **** Rebuild of configuration Debug for project pointer_struct_fxn ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pointer_struct_fxn.o" "..\\src\\pointer_struct_fxn.c" 
+gcc -o pointer_struct_fxn.exe "src\\pointer_struct_fxn.o" 
+16:04:30 **** Rebuild of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+16:10:20 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f.2", account->balance);
+      |                ~^     ~~~~~~~~~~~~~~~~
+      |                 |            |
+      |                 float *      double
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+16:12:52 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+16:15:36 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+..\src\w03_task2.c: In function 'main':
+..\src\w03_task2.c:41:22: error: invalid type argument of '->' (have 'bank')
+   41 |         scanf("%d", b->accountNumber);
+      |                      ^~
+..\src\w03_task2.c:44:22: error: invalid type argument of '->' (have 'bank')
+   44 |         scanf("%s", b->name);
+      |                      ^~
+..\src\w03_task2.c:47:22: error: invalid type argument of '->' (have 'bank')
+   47 |         scanf("%f", b->balance);
+      |                      ^~
+16:16:39 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+..\src\w03_task2.c: In function 'main':
+..\src\w03_task2.c:41:23: error: invalid type argument of '->' (have 'bank')
+   41 |         scanf("%d", &b->accountNumber);
+      |                       ^~
+..\src\w03_task2.c:44:23: error: invalid type argument of '->' (have 'bank')
+   44 |         scanf("%s", &b->name);
+      |                       ^~
+..\src\w03_task2.c:47:23: error: invalid type argument of '->' (have 'bank')
+   47 |         scanf("%f", &b->balance);
+      |                       ^~
+16:17:19 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+..\src\w03_task2.c: In function 'main':
+..\src\w03_task2.c:41:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   41 |         scanf("%d", b.accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~
+      |                 |    |
+      |                 |    int
+      |                 int *
+..\src\w03_task2.c:47:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   47 |         scanf("%f", b.balance);
+      |                ~^   ~~~~~~~~~
+      |                 |    |
+      |                 |    double
+      |                 float *
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+16:19:11 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%d", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+Info: Nothing to build for w03_task2
+16:28:53 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:23:17: warning: format '%i' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   23 |         scanf("%i", account->accountNumber);
+      |                ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 int *      int
+..\src\w03_task2.c:29:17: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+   29 |         scanf("%f", account->balance);
+      |                ~^   ~~~~~~~~~~~~~~~~
+      |                 |          |
+      |                 float *    double
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+16:32:44 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+..\src\w03_task2.c: In function 'input':
+..\src\w03_task2.c:26:17: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[20]' [-Wformat=]
+   26 |         scanf("%s", &account->name);
+      |                ~^   ~~~~~~~~~~~~~~
+      |                 |   |
+      |                 |   char (*)[20]
+      |                 char *
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+16:33:05 **** Incremental Build of configuration Debug for project w03_task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w03_task2.o" "..\\src\\w03_task2.c" 
+gcc -o w03_task2.exe "src\\w03_task2.o" 
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+Info: Nothing to build for w03_task2
+10:28:45 **** Rebuild of configuration Debug for project dynamic_memory ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\dynamic_memory.o" "..\\src\\dynamic_memory.c" 
+gcc -o dynamic_memory.exe "src\\dynamic_memory.o" 
+Info: Nothing to build for dynamic_memory
+10:42:25 **** Rebuild of configuration Debug for project linked_lists ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linked_lists.o" "..\\src\\linked_lists.c" 
+gcc -o linked_lists.exe "src\\linked_lists.o" 
+Info: Nothing to build for linked_lists
+Info: Nothing to build for linked_lists
+10:57:37 **** Incremental Build of configuration Debug for project linked_lists ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linked_lists.o" "..\\src\\linked_lists.c" 
+gcc -o linked_lists.exe "src\\linked_lists.o" 
+11:24:21 **** Rebuild of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c: In function 'display_all':
+..\src\w04_task.c:42:25: error: passing argument 1 of 'display' from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |                 display(&account);
+      |                         ^~~~~~~~
+      |                         |
+      |                         bank **
+..\src\w04_task.c:33:20: note: expected 'bank *' but argument is of type 'bank **'
+   33 | void display(bank *account)
+      |              ~~~~~~^~~~~~~
+..\src\w04_task.c: In function 'main':
+..\src\w04_task.c:50:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |         input(&b);
+      |               ^~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:54:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   54 |         input(&b2);
+      |               ^~~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:55:17: error: assignment to 'struct bank *' from incompatible pointer type 'bank *' [-Wincompatible-pointer-types]
+   55 |         b->next = b2;
+      |                 ^
+..\src\w04_task.c:59:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   59 |         input(&b3);
+      |               ^~~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:60:18: error: assignment to 'struct bank *' from incompatible pointer type 'bank *' [-Wincompatible-pointer-types]
+   60 |         b2->next = b3;
+      |                  ^
+..\src\w04_task.c:62:21: error: passing argument 1 of 'display_all' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         display_all(&b);
+      |                     ^~
+      |                     |
+      |                     bank **
+..\src\w04_task.c:38:24: note: expected 'bank *' but argument is of type 'bank **'
+   38 | void display_all(bank *account)
+      |                  ~~~~~~^~~~~~~
+11:25:15 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c: In function 'display_all':
+..\src\w04_task.c:42:25: error: passing argument 1 of 'display' from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |                 display(&account);
+      |                         ^~~~~~~~
+      |                         |
+      |                         bank **
+..\src\w04_task.c:33:20: note: expected 'bank *' but argument is of type 'bank **'
+   33 | void display(bank *account)
+      |              ~~~~~~^~~~~~~
+..\src\w04_task.c: In function 'main':
+..\src\w04_task.c:50:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |         input(&b);
+      |               ^~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:54:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   54 |         input(&b2);
+      |               ^~~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:59:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   59 |         input(&b3);
+      |               ^~~
+      |               |
+      |               bank **
+..\src\w04_task.c:21:18: note: expected 'bank *' but argument is of type 'bank **'
+   21 | void input(bank *account)
+      |            ~~~~~~^~~~~~~
+..\src\w04_task.c:62:21: error: passing argument 1 of 'display_all' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         display_all(&b);
+      |                     ^~
+      |                     |
+      |                     bank **
+..\src\w04_task.c:38:24: note: expected 'bank *' but argument is of type 'bank **'
+   38 | void display_all(bank *account)
+      |                  ~~~~~~^~~~~~~
+11:26:33 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c:19:1: warning: useless storage class specifier in empty declaration
+   19 | };
+      | ^
+..\src\w04_task.c: In function 'display_all':
+..\src\w04_task.c:42:25: error: passing argument 1 of 'display' from incompatible pointer type [-Wincompatible-pointer-types]
+   42 |                 display(&account);
+      |                         ^~~~~~~~
+      |                         |
+      |                         struct bank **
+..\src\w04_task.c:33:27: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   33 | void display(struct bank *account)
+      |              ~~~~~~~~~~~~~^~~~~~~
+..\src\w04_task.c: In function 'main':
+..\src\w04_task.c:50:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |         input(&b);
+      |               ^~
+      |               |
+      |               struct bank **
+..\src\w04_task.c:21:25: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   21 | void input(struct bank *account)
+      |            ~~~~~~~~~~~~~^~~~~~~
+..\src\w04_task.c:54:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   54 |         input(&b2);
+      |               ^~~
+      |               |
+      |               struct bank **
+..\src\w04_task.c:21:25: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   21 | void input(struct bank *account)
+      |            ~~~~~~~~~~~~~^~~~~~~
+..\src\w04_task.c:59:15: error: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   59 |         input(&b3);
+      |               ^~~
+      |               |
+      |               struct bank **
+..\src\w04_task.c:21:25: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   21 | void input(struct bank *account)
+      |            ~~~~~~~~~~~~~^~~~~~~
+..\src\w04_task.c:62:21: error: passing argument 1 of 'display_all' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         display_all(&b);
+      |                     ^~
+      |                     |
+      |                     struct bank **
+..\src\w04_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:28:57 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c:19:1: warning: useless storage class specifier in empty declaration
+   19 | };
+      | ^
+gcc -o w04_task.exe "src\\w04_task.o" 
+11:29:42 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c:21:1: error: expected ';', identifier or '(' before 'void'
+   21 | void input(struct bank *account)
+      | ^~~~
+11:30:11 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c:19:1: warning: useless storage class specifier in empty declaration
+   19 | };
+      | ^
+gcc -o w04_task.exe "src\\w04_task.o" 
+11:30:38 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+Info: Nothing to build for w04_task
+11:35:02 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c: In function 'main':
+..\src\w04_task.c:49:19: error: 'b2' undeclared (first use in this function); did you mean 'b'?
+   49 |         b->next = b2;
+      |                   ^~
+      |                   b
+..\src\w04_task.c:49:19: note: each undeclared identifier is reported only once for each function it appears in
+..\src\w04_task.c:53:20: error: 'b3' undeclared (first use in this function); did you mean 'b2'?
+   53 |         b2->next = b3;
+      |                    ^~
+      |                    b2
+11:35:35 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+11:36:17 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c: In function 'display_all':
+..\src\w04_task.c:43:24: warning: statement with no effect [-Wunused-value]
+   43 |                 account->next;
+      |                 ~~~~~~~^~~~~~
+gcc -o w04_task.exe "src\\w04_task.o" 
+11:36:45 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+Info: Nothing to build for w04_task
+Info: Nothing to build for w04_task
+11:43:55 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+Info: Nothing to build for w04_task
+11:50:30 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+Info: Nothing to build for w04_task
+11:54:33 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+..\src\w04_task.c: In function 'main':
+..\src\w04_task.c:65:9: error: too many arguments to function 'free'
+   65 |         free(b, b2, b3);
+      |         ^~~~
+In file included from ..\src\w04_task.c:12:
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdlib.h:537:16: note: declared here
+  537 |   void __cdecl free(void *_Memory);
+      |                ^~~~
+11:55:14 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+11:56:08 **** Incremental Build of configuration Debug for project w04_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
+gcc -o w04_task.exe "src\\w04_task.o" 
+Info: Nothing to build for w04_task
