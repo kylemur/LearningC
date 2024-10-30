@@ -1182,3 +1182,895 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w04_task.o" "..\\src\\w04_task.c" 
 gcc -o w04_task.exe "src\\w04_task.o" 
 Info: Nothing to build for w04_task
+17:32:04 **** Rebuild of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+17:32:50 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+17:36:15 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:76:37: error: 'b' undeclared (first use in this function)
+   76 |                         display_all(b);
+      |                                     ^
+..\src\w05_task.c:76:37: note: each undeclared identifier is reported only once for each function it appears in
+17:37:50 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:76:37: error: 'b' undeclared (first use in this function)
+   76 |                         display_all(b);
+      |                                     ^
+..\src\w05_task.c:76:37: note: each undeclared identifier is reported only once for each function it appears in
+17:37:55 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+11:30:30 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:50:28: error: initialization of 'struct bank *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   50 |         struct bank *b = { 1, "Andy", 123.12, NULL };
+      |                            ^
+..\src\w05_task.c:50:28: note: (near initialization for 'b')
+..\src\w05_task.c:50:31: warning: excess elements in scalar initializer
+   50 |         struct bank *b = { 1, "Andy", 123.12, NULL };
+      |                               ^~~~~~
+..\src\w05_task.c:50:31: note: (near initialization for 'b')
+..\src\w05_task.c:50:39: warning: excess elements in scalar initializer
+   50 |         struct bank *b = { 1, "Andy", 123.12, NULL };
+      |                                       ^~~~~~
+..\src\w05_task.c:50:39: note: (near initialization for 'b')
+..\src\w05_task.c:50:47: warning: excess elements in scalar initializer
+   50 |         struct bank *b = { 1, "Andy", 123.12, NULL };
+      |                                               ^~~~
+..\src\w05_task.c:50:47: note: (near initialization for 'b')
+..\src\w05_task.c:57:29: error: initialization of 'struct bank *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   57 |         struct bank *b2 = { 2, "Bob", 456.65, NULL };
+      |                             ^
+..\src\w05_task.c:57:29: note: (near initialization for 'b2')
+..\src\w05_task.c:57:32: warning: excess elements in scalar initializer
+   57 |         struct bank *b2 = { 2, "Bob", 456.65, NULL };
+      |                                ^~~~~
+..\src\w05_task.c:57:32: note: (near initialization for 'b2')
+..\src\w05_task.c:57:39: warning: excess elements in scalar initializer
+   57 |         struct bank *b2 = { 2, "Bob", 456.65, NULL };
+      |                                       ^~~~~~
+..\src\w05_task.c:57:39: note: (near initialization for 'b2')
+..\src\w05_task.c:57:47: warning: excess elements in scalar initializer
+   57 |         struct bank *b2 = { 2, "Bob", 456.65, NULL };
+      |                                               ^~~~
+..\src\w05_task.c:57:47: note: (near initialization for 'b2')
+..\src\w05_task.c:65:29: error: initialization of 'struct bank *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   65 |         struct bank *b3 = { 3, "Chad", 789.987, NULL };
+      |                             ^
+..\src\w05_task.c:65:29: note: (near initialization for 'b3')
+..\src\w05_task.c:65:32: warning: excess elements in scalar initializer
+   65 |         struct bank *b3 = { 3, "Chad", 789.987, NULL };
+      |                                ^~~~~~
+..\src\w05_task.c:65:32: note: (near initialization for 'b3')
+..\src\w05_task.c:65:40: warning: excess elements in scalar initializer
+   65 |         struct bank *b3 = { 3, "Chad", 789.987, NULL };
+      |                                        ^~~~~~~
+..\src\w05_task.c:65:40: note: (near initialization for 'b3')
+..\src\w05_task.c:65:49: warning: excess elements in scalar initializer
+   65 |         struct bank *b3 = { 3, "Chad", 789.987, NULL };
+      |                                                 ^~~~
+..\src\w05_task.c:65:49: note: (near initialization for 'b3')
+11:31:11 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:10: error: invalid type argument of '->' (have 'struct bank')
+   63 |         b->next = b2;
+      |          ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = b3;
+      |           ^~
+..\src\w05_task.c:86:37: error: incompatible type for argument 1 of 'display_all'
+   86 |                         display_all(b);
+      |                                     ^
+      |                                     |
+      |                                     struct bank
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:31:55 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:10: error: invalid type argument of '->' (have 'struct bank')
+   63 |         b->next = b2;
+      |          ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = b3;
+      |           ^~
+11:33:55 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:10: error: invalid type argument of '->' (have 'struct bank')
+   63 |         b->next = b2;
+      |          ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = b3;
+      |           ^~
+..\src\w05_task.c:86:37: error: incompatible type for argument 1 of 'display_all'
+   86 |                         display_all(b);
+      |                                     ^
+      |                                     |
+      |                                     struct bank
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:34:25 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:11: error: invalid type argument of '->' (have 'struct bank')
+   63 |         *b->next = b2;
+      |           ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = b3;
+      |           ^~
+..\src\w05_task.c:86:37: error: incompatible type for argument 1 of 'display_all'
+   86 |                         display_all(b);
+      |                                     ^
+      |                                     |
+      |                                     struct bank
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:34:41 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:11: error: invalid type argument of '->' (have 'struct bank')
+   63 |         &b->next = b2;
+      |           ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = b3;
+      |           ^~
+..\src\w05_task.c:86:37: error: incompatible type for argument 1 of 'display_all'
+   86 |                         display_all(b);
+      |                                     ^
+      |                                     |
+      |                                     struct bank
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:42:17 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:63:10: error: invalid type argument of '->' (have 'struct bank')
+   63 |         b->next = &b2;
+      |          ^~
+..\src\w05_task.c:71:11: error: invalid type argument of '->' (have 'struct bank')
+   71 |         b2->next = &b3;
+      |           ^~
+..\src\w05_task.c:86:37: error: incompatible type for argument 1 of 'display_all'
+   86 |                         display_all(b);
+      |                                     ^
+      |                                     |
+      |                                     struct bank
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:43:35 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+11:48:27 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:54:17: error: assignment to expression with array type
+   54 |         b->name = "Andy";
+      |                 ^
+..\src\w05_task.c:62:18: error: assignment to expression with array type
+   62 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:72:18: error: assignment to expression with array type
+   72 |         b3->name = "Chad";
+      |                  ^
+..\src\w05_task.c:90:37: error: passing argument 1 of 'display_all' from incompatible pointer type [-Wincompatible-pointer-types]
+   90 |                         display_all(&b);
+      |                                     ^~
+      |                                     |
+      |                                     struct bank **
+..\src\w05_task.c:38:31: note: expected 'struct bank *' but argument is of type 'struct bank **'
+   38 | void display_all(struct bank *account)
+      |                  ~~~~~~~~~~~~~^~~~~~~
+11:48:39 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:54:17: error: assignment to expression with array type
+   54 |         b->name = "Andy";
+      |                 ^
+..\src\w05_task.c:62:18: error: assignment to expression with array type
+   62 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:72:18: error: assignment to expression with array type
+   72 |         b3->name = "Chad";
+      |                  ^
+11:52:46 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:50:14: error: expected expression before '{' token
+   50 |         *b = { 1, "Andy", 123.12, NULL };
+      |              ^
+..\src\w05_task.c:62:18: error: assignment to expression with array type
+   62 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:72:18: error: assignment to expression with array type
+   72 |         b3->name = "Chad";
+      |                  ^
+11:53:28 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:50:13: error: expected expression before '{' token
+   50 |         b = { 1, "Andy", 123.12, NULL };
+      |             ^
+..\src\w05_task.c:62:18: error: assignment to expression with array type
+   62 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:72:18: error: assignment to expression with array type
+   72 |         b3->name = "Chad";
+      |                  ^
+11:53:40 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:50:14: error: expected expression before '{' token
+   50 |         &b = { 1, "Andy", 123.12, NULL };
+      |              ^
+..\src\w05_task.c:62:18: error: assignment to expression with array type
+   62 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:72:18: error: assignment to expression with array type
+   72 |         b3->name = "Chad";
+      |                  ^
+11:55:04 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:66:18: error: assignment to expression with array type
+   66 |         b2->name = "Bob";
+      |                  ^
+..\src\w05_task.c:76:18: error: assignment to expression with array type
+   76 |         b3->name = "Chad";
+      |                  ^
+11:56:52 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+12:14:52 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:90:28: error: invalid initializer
+   90 |         struct bank head = malloc(sizeof(struct bank));
+      |                            ^~~~~~
+..\src\w05_task.c:91:20: error: incompatible types when assigning to type 'struct bank *' from type 'struct bank'
+   91 |         b3->next = head;
+      |                    ^~~~
+..\src\w05_task.c:101:51: error: invalid initializer
+  101 |                         struct bank new_account = malloc(sizeof(struct bank));
+      |                                                   ^~~~~~
+..\src\w05_task.c:102:31: error: incompatible type for argument 1 of 'input'
+  102 |                         input(new_account);
+      |                               ^~~~~~~~~~~
+      |                               |
+      |                               struct bank
+..\src\w05_task.c:21:25: note: expected 'struct bank *' but argument is of type 'struct bank'
+   21 | void input(struct bank *account)
+      |            ~~~~~~~~~~~~~^~~~~~~
+..\src\w05_task.c:105:36: error: invalid type argument of '->' (have 'struct bank')
+  105 |                         while (tail->next != NULL)
+      |                                    ^~
+..\src\w05_task.c:107:52: error: invalid type argument of '->' (have 'struct bank')
+  107 |                                         tail = tail->next;
+      |                                                    ^~
+..\src\w05_task.c:109:29: error: invalid type argument of '->' (have 'struct bank')
+  109 |                         tail->next = new_account;
+      |                             ^~
+12:16:39 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+In file included from ..\src\w05_task.c:11:
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:90:28: error: invalid initializer
+   90 |         struct bank head = NULL;
+      |                            ^~~~
+..\src\w05_task.c:91:20: error: incompatible types when assigning to type 'struct bank *' from type 'struct bank'
+   91 |         b3->next = head;
+      |                    ^~~~
+..\src\w05_task.c:101:51: error: invalid initializer
+  101 |                         struct bank new_account = NULL;
+      |                                                   ^~~~
+..\src\w05_task.c:102:31: error: incompatible type for argument 1 of 'input'
+  102 |                         input(new_account);
+      |                               ^~~~~~~~~~~
+      |                               |
+      |                               struct bank
+..\src\w05_task.c:21:25: note: expected 'struct bank *' but argument is of type 'struct bank'
+   21 | void input(struct bank *account)
+      |            ~~~~~~~~~~~~~^~~~~~~
+..\src\w05_task.c:105:36: error: invalid type argument of '->' (have 'struct bank')
+  105 |                         while (tail->next != NULL)
+      |                                    ^~
+..\src\w05_task.c:107:52: error: invalid type argument of '->' (have 'struct bank')
+  107 |                                         tail = tail->next;
+      |                                                    ^~
+..\src\w05_task.c:109:29: error: invalid type argument of '->' (have 'struct bank')
+  109 |                         tail->next = new_account;
+      |                             ^~
+12:17:20 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:104:44: error: invalid initializer
+  104 |                         struct bank tail = head;
+      |                                            ^~~~
+..\src\w05_task.c:105:36: error: invalid type argument of '->' (have 'struct bank')
+  105 |                         while (tail->next != NULL)
+      |                                    ^~
+..\src\w05_task.c:107:52: error: invalid type argument of '->' (have 'struct bank')
+  107 |                                         tail = tail->next;
+      |                                                    ^~
+..\src\w05_task.c:109:29: error: invalid type argument of '->' (have 'struct bank')
+  109 |                         tail->next = new_account;
+      |                             ^~
+12:17:39 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+13:51:49 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:91:18: warning: 'head' is used uninitialized [-Wuninitialized]
+   91 |         b3->next = head;
+      |         ~~~~~~~~~^~~~~~
+..\src\w05_task.c:90:22: note: 'head' was declared here
+   90 |         struct bank *head;
+      |                      ^~~~
+..\src\w05_task.c:102:25: warning: 'new_account' may be used uninitialized [-Wmaybe-uninitialized]
+  102 |                         input(new_account);
+      |                         ^~~~~~~~~~~~~~~~~~
+..\src\w05_task.c:101:38: note: 'new_account' was declared here
+  101 |                         struct bank *new_account;
+      |                                      ^~~~~~~~~~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+13:52:43 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+13:56:07 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+13:57:44 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:04:17 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:14:07 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:17:45 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:19:37 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:21:41 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:24:30 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:26:55 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:108:37: error: 'b' undeclared (first use in this function)
+  108 |                         display_all(b);
+      |                                     ^
+..\src\w05_task.c:108:37: note: each undeclared identifier is reported only once for each function it appears in
+14:27:23 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:107:37: error: 'b' undeclared (first use in this function)
+  107 |                         display_all(b);
+      |                                     ^
+..\src\w05_task.c:107:37: note: each undeclared identifier is reported only once for each function it appears in
+14:28:19 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:29:07 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:31:23 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:34:38 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+Info: Nothing to build for w05_task
+14:37:52 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:40:37 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+14:42:39 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+Info: Nothing to build for w05_task
+Info: Nothing to build for w05_task
+14:56:54 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", &acct_num);
+      |                               ^~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:57:17 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", acct_num);
+      |                               ^~~
+..\src\w05_task.c:117:25: warning: 'acct_num' may be used uninitialized [-Wmaybe-uninitialized]
+  117 |                         scanf("d", acct_num);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+..\src\w05_task.c:115:29: note: 'acct_num' was declared here
+  115 |                         int acct_num;
+      |                             ^~~~~~~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:57:40 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:115:40: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  115 |                         int acct_num = NULL;
+      |                                        ^~~~
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", acct_num);
+      |                               ^~~
+14:58:07 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", acct_num);
+      |                               ^~~
+..\src\w05_task.c:117:25: warning: 'acct_num' may be used uninitialized [-Wmaybe-uninitialized]
+  117 |                         scanf("d", acct_num);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+..\src\w05_task.c:115:29: note: 'acct_num' was declared here
+  115 |                         int acct_num;
+      |                             ^~~~~~~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:58:17 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", &acct_num);
+      |                               ^~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:59:33 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", acct_num);
+      |                               ^~~
+..\src\w05_task.c:120:54: warning: comparison between pointer and integer
+  120 |                         while (search->accountNumber != acct_num)
+      |                                                      ^~
+..\src\w05_task.c:124:51: warning: comparison between pointer and integer
+  124 |                         if (search->accountNumber == acct_num) {
+      |                                                   ^~
+..\src\w05_task.c:117:25: warning: 'acct_num' may be used uninitialized [-Wmaybe-uninitialized]
+  117 |                         scanf("d", acct_num);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+..\src\w05_task.c:115:30: note: 'acct_num' was declared here
+  115 |                         int *acct_num;
+      |                              ^~~~~~~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+14:59:44 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+..\src\w05_task.c: In function 'main':
+..\src\w05_task.c:117:31: warning: too many arguments for format [-Wformat-extra-args]
+  117 |                         scanf("d", &acct_num);
+      |                               ^~~
+gcc -o w05_task.exe "src\\w05_task.o" 
+15:01:25 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+15:03:29 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+15:07:22 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+15:09:37 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+15:44:48 **** Incremental Build of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+Info: Nothing to build for w05_task
+16:40:52 **** Rebuild of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'write':
+..\src\w06_task.c:20:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+   20 |         fprintf(fp, "%s", message);
+      |                      ~^   ~~~~~~~
+      |                       |   |
+      |                       |   int
+      |                       char *
+      |                      %d
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", &opt);
+      |                       ^~~
+gcc -o w06_task.exe "src\\w06_task.o" 
+16:42:21 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'write':
+..\src\w06_task.c:20:23: warning: format '%s' expects argument of type 'char *', but argument 3 has type 'int' [-Wformat=]
+   20 |         fprintf(fp, "%s", message);
+      |                      ~^   ~~~~~~~
+      |                       |   |
+      |                       |   int
+      |                       char *
+      |                      %d
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", opt);
+      |                       ^~~
+..\src\w06_task.c:48:31: error: passing argument 1 of 'write' makes integer from pointer without a cast [-Wint-conversion]
+   48 |                         write(message);
+      |                               ^~~~~~~
+      |                               |
+      |                               char *
+..\src\w06_task.c:14:17: note: expected 'char' but argument is of type 'char *'
+   14 | void write(char message) {
+      |            ~~~~~^~~~~~~
+16:43:08 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", opt);
+      |                       ^~~
+gcc -o w06_task.exe "src\\w06_task.o" 
+16:43:41 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:38:20: error: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   38 |         int *opt = 99;
+      |                    ^~
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", opt);
+      |                       ^~~
+..\src\w06_task.c:44:25: warning: comparison between pointer and integer
+   44 |                 if (opt == 1) {
+      |                         ^~
+..\src\w06_task.c:50:32: warning: comparison between pointer and integer
+   50 |                 } else if (opt == 2) {
+      |                                ^~
+16:43:46 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", opt);
+      |                       ^~~
+gcc -o w06_task.exe "src\\w06_task.o" 
+16:43:55 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", &opt);
+      |                       ^~~
+gcc -o w06_task.exe "src\\w06_task.o" 
+16:44:12 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:42:23: warning: too many arguments for format [-Wformat-extra-args]
+   42 |                 scanf("d", opt);
+      |                       ^~~
+gcc -o w06_task.exe "src\\w06_task.o" 
+16:46:39 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+16:50:07 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+16:51:17 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+16:53:47 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+11:57:14 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+12:05:44 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+12:08:25 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+Info: Nothing to build for w06_task
+Info: Nothing to build for w06_task
+Info: Nothing to build for w06_task
+12:13:06 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+12:20:06 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+12:27:15 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'get_date':
+..\src\w06_task.c:19:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return "%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900;
+      |                          ^
+..\src\w06_task.c:19:41: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return "%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900;
+      |                                         ^
+..\src\w06_task.c:19:53: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return "%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900;
+      |                                                     ^
+gcc -o w06_task.exe "src\\w06_task.o" 
+12:27:30 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'get_date':
+..\src\w06_task.c:19:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return ("%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900);
+      |                           ^
+..\src\w06_task.c:19:42: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return ("%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900);
+      |                                          ^
+..\src\w06_task.c:19:54: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   19 |     return ("%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900);
+      |                                                      ^
+gcc -o w06_task.exe "src\\w06_task.o" 
+12:29:18 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'get_date':
+..\src\w06_task.c:19:9: error: expected identifier or '(' before '[' token
+   19 |     char[11] date_text= ("%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900);
+      |         ^
+..\src\w06_task.c:20:12: error: 'date_text' undeclared (first use in this function)
+   20 |     return date_text;
+      |            ^~~~~~~~~
+..\src\w06_task.c:20:12: note: each undeclared identifier is reported only once for each function it appears in
+..\src\w06_task.c:17:15: warning: unused variable 'tm' [-Wunused-variable]
+   17 |     struct tm tm = *localtime(&t);  // Convert time to local time
+      |               ^~
+..\src\w06_task.c:21:1: warning: control reaches end of non-void function [-Wreturn-type]
+   21 | }
+      | ^
+12:30:01 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'get_date':
+..\src\w06_task.c:19:9: error: expected identifier or '(' before '[' token
+   19 |     char[15] date_text= ("%02d_%02d_%d", tm.tm_mon + 1, tm.tm_mday, tm.tm_year + 1900);
+      |         ^
+..\src\w06_task.c:20:12: error: 'date_text' undeclared (first use in this function)
+   20 |     return date_text;
+      |            ^~~~~~~~~
+..\src\w06_task.c:20:12: note: each undeclared identifier is reported only once for each function it appears in
+..\src\w06_task.c:17:15: warning: unused variable 'tm' [-Wunused-variable]
+   17 |     struct tm tm = *localtime(&t);  // Convert time to local time
+      |               ^~
+..\src\w06_task.c:21:1: warning: control reaches end of non-void function [-Wreturn-type]
+   21 | }
+      | ^
+12:34:21 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'main':
+..\src\w06_task.c:67:25: error: too few arguments to function 'get_date'
+   67 |                         get_date();
+      |                         ^~~~~~~~
+..\src\w06_task.c:15:6: note: declared here
+   15 | void get_date(char* date_text) {
+      |      ^~~~~~~~
+..\src\w06_task.c:73:25: error: too few arguments to function 'get_date'
+   73 |                         get_date();
+      |                         ^~~~~~~~
+..\src\w06_task.c:15:6: note: declared here
+   15 | void get_date(char* date_text) {
+      |      ^~~~~~~~
+12:34:55 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+12:45:14 **** Rebuild of configuration Debug for project w05_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w05_task.o" "..\\src\\w05_task.c" 
+gcc -o w05_task.exe "src\\w05_task.o" 
+12:45:15 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c:16:13: error: expected identifier or '(' before '[' token
+   16 |         char[25] account_name;
+      |             ^
+..\src\w06_task.c:17:13: error: expected identifier or '(' before '[' token
+   17 |         char[25] user_name;
+      |             ^
+..\src\w06_task.c:18:13: error: expected identifier or '(' before '[' token
+   18 |         char[50] password;
+      |             ^
+..\src\w06_task.c:19:13: error: expected identifier or '(' before '[' token
+   19 |         char[250] description;
+      |             ^
+..\src\w06_task.c:20:1: warning: no semicolon at end of struct or union
+   20 | } password_data;
+      | ^
+Info: Nothing to build for w05_task
+12:47:01 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w05_task
+13:27:59 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'save_password':
+..\src\w06_task.c:43:9: error: implicit declaration of function 'get_date' [-Wimplicit-function-declaration]
+   43 |         get_date(date_text);  // date_text is changed to today's date
+      |         ^~~~~~~~
+..\src\w06_task.c: At top level:
+..\src\w06_task.c:48:6: warning: conflicting types for 'get_date'; have 'void(char *)'
+   48 | void get_date(char* date_text) {
+      |      ^~~~~~~~
+..\src\w06_task.c:43:9: note: previous implicit declaration of 'get_date' with type 'void(char *)'
+   43 |         get_date(date_text);  // date_text is changed to today's date
+      |         ^~~~~~~~
+Info: Nothing to build for w05_task
+13:29:20 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+13:36:17 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+13:40:17 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+13:41:17 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+..\src\w06_task.c: In function 'save_password':
+..\src\w06_task.c:50:17: error: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |         fprintf("%s\n\n", date_text);
+      |                 ^~~~~~~~
+      |                 |
+      |                 char *
+In file included from ..\src\w06_task.c:11:
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:511:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+  511 |   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\w06_task.c: In function 'write':
+..\src\w06_task.c:62:17: error: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   62 |         fprintf("%s\n\n", date_text);
+      |                 ^~~~~~~~
+      |                 |
+      |                 char *
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:511:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+  511 |   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+..\src\w06_task.c: In function 'append':
+..\src\w06_task.c:74:17: error: passing argument 1 of 'fprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+   74 |         fprintf("%s\n\n", date_text);
+      |                 ^~~~~~~~
+      |                 |
+      |                 char *
+C:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:511:43: note: expected 'FILE * restrict' {aka 'struct _iobuf * restrict'} but argument is of type 'char *'
+  511 |   int __cdecl fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~~~
+13:42:40 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+13:49:07 **** Incremental Build of configuration Debug for project w06_task ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\w06_task.o" "..\\src\\w06_task.c" 
+gcc -o w06_task.exe "src\\w06_task.o" 
+Info: Nothing to build for w06_task
+Info: Nothing to build for w05_task
